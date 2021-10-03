@@ -1,0 +1,44 @@
+
+@mixin mediumDesktop {
+    @media screen and (max-width: 1440px) {
+       @content; 
+    }
+    
+}
+
+@mixin smallDesktop {
+    @media screen and (max-width: 1280px) {
+       @content;
+    }
+    
+}
+
+@mixin tablet {
+    @media screen and (max-width: 1024px) {
+       @content;
+    }
+    
+}
+
+@mixin largePhone {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+    
+    
+}
+
+@mixin smallPhone {
+    @media screen and (max-width: 375px) { 
+       @content;
+    }
+    
+}
+
+
+
+
+
+
+
+

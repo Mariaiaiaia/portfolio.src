@@ -1,0 +1,79 @@
+{
+    "box":[
+        {
+            "boxImg": "images/whiteBox1.png",
+            "boxText": {
+                "h5": "Sell subscriptionL",
+                "p": "Build customer loyalty and repeat business with monthly or biweekly subscriptions"
+            }
+        },
+        {
+            "boxImg": "images/whiteBox2.jfif",
+            "boxText": {
+                "h5": "Sell digital content",
+                "p": "Sell digital content like music and ebooks via direct download from your site."
+            }
+        },
+        {
+            "boxImg": "images/whiteBox3.jfif",
+            "boxText": {
+                "h5": "Sell in person",
+                "p": "Keep your inventory and customer data in sync, whether you sell online or in person."
+            }
+        }
+    ],
+
+    "slides":[
+        {
+            "img":"images/slide1.jpg"
+
+        },
+        {
+            "img":"images/slide2.png"
+
+        },
+        {
+            "img":"images/slide3.png"
+
+        },
+        {
+            "img":"images/slide4.jfif"
+
+        },
+        {
+            "img":"images/slide5.jfif"
+
+        },
+        {
+            "img":"images/slide6.png"
+
+        }
+
+    ],
+    "mobileslides":[
+        {
+            "img":"images/mobSlide1.jfif"
+
+        },
+        {
+            "img":"images/mobSlide2.jfif"
+
+        },
+        {
+            "img":"images/mobSlide3.png"
+
+        },
+        {
+            "img":"images/mobSlide4.jfif"
+
+        },
+        {
+            "img":"images/mobSlide5.png"
+
+        }
+
+    ]
+    
+
+}
+

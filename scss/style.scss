@@ -1,0 +1,1064 @@
+@import "nullstyle.scss";
+@import 'media';
+
+
+
+
+
+%templTextBlock{
+
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  width: 700px;   
+  margin: 0 auto;
+  
+  
+    
+
+  h1{
+    font-size: 56px;
+    font-weight: 500;
+  }
+
+  p{
+    padding-top: 2vh;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+
+
+  @include mediumDesktop {
+    width: 550px;
+
+    h1{
+      font-size: 50px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+    
+
+
+  @include smallDesktop {
+    h1{
+      font-size: 40px;
+    }
+    p{
+      font-size: 18px;
+    }   
+  }
+    
+
+
+  @include tablet {
+    h1{
+      font-size: 32px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+    
+
+
+  @include largePhone {
+    text-align: left;
+    width: 90%;
+    padding: 4vw 2vw;
+    margin: 0;
+
+    h1{
+      font-size: 28px;
+    }
+    p{
+      font-size: 17px;
+    }  
+  }
+   
+
+
+
+  @include smallPhone {
+    h1{
+      font-size: 26px;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+.wrapper{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+    
+
+  
+    .navbar{
+      width:  100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2; 
+      transition: 2s;
+      
+      #navLogo{         
+        height: 100%;
+        padding-left: 70px;
+        text-transform: uppercase;   
+        font-size: 25px;
+        color: rgb(49, 49, 49);  
+        letter-spacing: 7px;
+      }
+
+      #navbarNavAltMarkup{  
+        position: absolute;
+        width: 100%;
+        justify-content: center;    
+      }
+  
+      .navLink{
+        color: rgb(49, 49, 49);
+        text-transform: uppercase;
+        text-decoration: none;
+        align-self: center;
+        padding: 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+
+        &:hover{
+          color: rgba(112, 112, 112, 0.486);
+        }
+      }
+
+      .burger{
+        .material-icons{
+          font-size: 50px;
+          display: none;
+        }
+      }
+
+
+      @include mediumDesktop {
+        #navLogo{
+          font-size: 22px;
+          letter-spacing: 6.16px;
+        }
+        .navLink{
+          font-size: 17px;
+        }
+      }
+      
+
+      @include smallDesktop {
+        #navLogo{
+          font-size: 19px;
+          letter-spacing: 5.32px;
+        }  
+      }
+      
+
+      @include tablet {
+        #navLogo{
+          font-size: 18px;
+          letter-spacing: 5px;
+        }  
+      }
+
+
+      @media screen and (max-width: 992px) {
+        #navLogo{
+          font-size: 0px;
+          padding-left: 5vw;
+        } 
+        .burger{
+          .material-icons{
+            font-size: 50px;
+            display: block;
+            padding-right: 5vw;
+          }
+        }
+
+      }
+  
+    }
+  
+
+
+
+
+
+
+
+
+  
+    header{  
+      background: url("../images/headerImg.jfif") no-repeat right;
+      background-size: cover;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+
+      .headerContainer{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 4vw;
+        flex: 1 1 auto;
+        width: 100%;
+        justify-content: space-between;
+         
+        .headerLeftSide{
+          width: 40vw;
+          text-align: left;
+          padding: 2vw;
+          color: rgb(71, 71, 71);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition: 1.5s;
+
+    
+          h2{                  
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 19px;
+          }
+    
+          h1{                      
+            font-weight: 500;
+            font-size: 60px;
+          }
+    
+          p{
+            font-weight: 600;
+            font-size: 18px;
+            padding-top: 10px;
+          }
+
+          @include mediumDesktop{
+            h2{                  
+              font-size: 17px;
+            }
+     
+            h1{                      
+              font-size: 58px;
+            }
+     
+            p{
+             font-size: 14px;
+             padding-right: 70px;
+            }
+          }
+
+
+          @include smallDesktop{
+            h2{                  
+             font-size: 17px;
+            }
+
+            h1{                      
+             font-size: 40px;
+            }
+
+            p{
+             font-size: 14px;
+            }
+          }
+
+
+          @include tablet {
+            width: 100vw;
+            height: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.562);
+            padding: 10vw;
+
+            h2{                  
+              font-size: 17px;
+            }
+ 
+            h1{                      
+              font-size: 40px;
+            }
+ 
+            p{
+              font-size: 14px;
+              padding-right: 0px;
+            }
+          }
+        }
+    
+    
+    
+
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+  
+          .headerLeftSide{
+           width: 100%;
+           text-align: center;
+           color: white;
+           display: flex;
+           flex-direction: column;
+           justify-content: center
+          }    
+        }
+      }
+    }
+
+
+
+
+
+
+
+  
+    main{
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+     
+            
+  
+      .mainStores{
+        width: 100%;
+        min-height: 100vh;
+        background-color:black;
+        overflow: hidden;
+      
+        .storesWrapper{
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
+          padding: 2vh 0;
+             
+          .storesText{
+            @extend %templTextBlock;
+            transition: 1.5s;
+          }
+
+  
+          .storesCarousel{
+           
+            overflow: hidden;
+            margin-top: 4vh;
+
+            .sliderWrapper{
+    
+              padding-top: 1vw;
+              min-height: 27vw;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;  
+              position: relative;
+              transform: translate3d(-12.4vw, 0, 0);
+              transition: 2s;
+
+              .storesSlide{
+                      
+                width: 38vw;
+                margin-left: 3vw;
+                      
+                img{ 
+                  width: 38vw;
+                  height: 100%;
+                }
+              
+                .darkImg{
+                  background-color: rgba(161, 117, 161, 0);                          
+                  width: 38vw;
+                }
+              } 
+
+              .mobSlide{
+                display: none;
+                padding: 5vw 15vw;
+                margin: 0 auto;
+              
+                img{
+                  width: 100%;
+                }
+              }
+
+              @include largePhone{
+                transform: translateX(0);
+
+                .storesSlide{
+                  display: none;
+                }
+                .activeMobSlide{
+                  display: block;
+                }
+              }
+            }
+  
+
+  
+            .carouselButton{
+              padding: 1vh 0;
+              width: 100%;                
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              color: white;
+  
+              #btnPrev{
+                color: rgba(255, 255, 255, 0.432);
+              }
+  
+              .arrowBtn{
+                padding: 0 2vw 0 2vw;
+                cursor: pointer;
+  
+                .material-icons.md-48, .numOfSlides{
+                  font-size: 1.6vw;
+                }                     
+              }
+              
+              @include largePhone{
+                display: none;
+              }
+            } 
+          }
+        }
+
+        @include tablet{
+          min-height: fit-content;
+          .storesWrapper{
+            min-height: fit-content;
+            
+          }
+        }
+      }
+  
+  
+      .mainProducts{
+        width: 100%;   
+        background-color: #383439;
+        display: flex;
+        flex-direction: column;
+
+        .prodWrapper{
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
+          padding: 2vw;
+
+  
+          .productsText{
+            @extend %templTextBlock;
+         
+          }
+
+       
+  
+          .prodSlideBack{            
+            width: 90vw;
+            margin: 0 auto;
+            padding: 5vw 0;
+            overflow: hidden;
+            display: flex;                     
+            background: url("../images/15502398728_8a64a4e606_k.jpg") no-repeat right;
+            background-size: cover;
+
+
+            .prodSlide{               
+              padding: 0 0 3vw 0;
+              margin: 0 auto;
+              background-color: white;
+              overflow: hidden;      
+              
+              .imgContainer{
+                width: 60vw;
+                position: relative;
+                  
+              }
+              .topImg{
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                  
+              }
+              .backImg{
+                position: absolute;
+                top: 15%;
+                left: 40%;
+                z-index: 0;
+                width: 60%;             
+                animation-name: slide;
+                animation-duration: 12s;
+                animation-iteration-count: infinite;
+              }  
+              @keyframes slide {
+                0%   {top:15%}
+                35%  {top: -70%}
+                50%  {top:-160%}
+                75%  {top:-255%}
+                100% {top:15%}
+              }
+
+              .ImgSmall{
+                display: none;
+              }
+            }
+
+            @include largePhone{
+              .prodSlide{
+                .ImgLarge{
+                  display: none;
+                }
+                .ImgSmall{
+                  display: block;
+                }
+              
+
+                .backImg{
+                  position: absolute;
+                  top: 0%;
+                  left: 0;
+                  z-index: 0;
+                  width: 100%; 
+                              
+                  animation-name: slide;
+                  animation-duration: 12s;
+                  animation-iteration-count: infinite;
+                  
+                }
+
+                @keyframes slide {
+                  0%   {top: 0%}
+                  15%  {top: -70%}
+                  35%  {top: -140%}
+                  50%  {top: -220%}
+                  75%  {top: -310%}
+                  100% {top: 0%}
+                }
+              }
+            }
+          }
+
+
+          .prodTextImg{
+            width: 90vw;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            padding: 5% 0 0 0;
+            transition: 2.5s;
+           
+            .smallText{
+              width: 50%;
+              color: white;
+              display: flex;
+              align-items: center;
+              padding: 2% 8% 2% 0;
+              font-size: 28px;
+            }      
+            .smallImg{
+              width: 50%;
+              display: flex;     
+              align-items: center;      
+              padding: 2%;
+                 
+              img{
+                width: 100%;                 
+              }     
+            } 
+            
+            
+
+            @include mediumDesktop{
+
+              .smallText{
+                padding: 5%;
+                font-size: 26px;
+              }
+            }
+
+            @include smallDesktop{
+
+              .smallText{
+                padding: 5%;
+                font-size: 23px;
+              }
+            }
+
+            @include tablet{
+              flex-direction: column;
+              padding: 5vw 0;
+              
+
+              .smallText{
+                width: 95%;
+                padding: 5vw 0;
+                font-size: 28px;
+              }      
+              .smallImg{
+                width: 100%;     
+                padding: 0;          
+              }
+            }
+
+            @include largePhone {
+              .smallText{
+                font-size: 16px;
+                p{
+                  margin: 0;
+                }
+              }
+              .smallImg{  
+                padding-bottom: 6%;
+              }                
+            }
+
+            @include smallPhone{
+              .smallText{
+                font-size: 13px;
+              }
+            }
+          }          
+        }
+      }
+
+
+      .mainWhiteSection{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .whiteSectionWrapper{   
+          margin: 0 auto;
+          padding: 2vw;
+                
+          .whiteSectionText{
+            @extend %templTextBlock;
+            color: #383439; 
+
+            @include tablet{
+              padding-left: 7vw;
+              padding-right: 7vw;
+            }
+
+            @include smallPhone{
+              padding: 2vw 0;
+            }
+          }
+
+          #whiteBoxContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            .box{               
+              display: flex;
+              flex: 0 0 30%;
+              flex-direction: column;
+              padding: 1vw;
+              
+              .boxImg{
+                background-color: rgb(189, 189, 189);
+                height: 22vw;
+                padding: 3vw;
+                
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              
+              .boxText{
+                padding: 1vw 0;
+                color:#383439;
+              
+                h5{
+                  font-size: 30px;
+                  font-weight: 600;
+                }
+                p{
+                  font-size: 20px;
+                }
+              }
+            }
+
+
+
+            @include mediumDesktop{     
+              .box{
+                .boxText{
+                  h5{
+                    font-size: 25px;
+                  }
+                  p{
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+
+            @include smallDesktop{     
+              .box{
+                .boxText{
+                  h5{
+                    font-size: 22px;
+                  }
+                  p{
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+
+          
+            @include tablet{ 
+              flex-direction: column;
+              padding: 3vw;
+              
+              .box{
+                padding: 0 4vw;
+
+                .boxImg{
+                  height: 62vw;
+                }
+                .boxText{
+                  padding: 4vw 0;
+
+                  h5{
+                    font-size: 26px;
+                  }
+                  p{
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+
+
+            @include smallPhone{
+              padding: 0;                  
+              .box{
+                padding: 0;         
+
+                .boxText{ 
+                  h5{
+                    font-size: 22px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+      .shoppingCart{
+        width: 100%;
+        min-height: 100vh;
+        background: url("../images/background.jpg") no-repeat right;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+
+        .shoppingCartWrapper{
+          width: 100%;
+          padding: 5vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .shoppingImg{
+            width: 45vw;
+            padding: 0 10vw;
+
+            img{
+              width: 100%;
+            }
+          }
+
+          .shoppingText{
+            width: 45vw;
+            padding: 0 4vw;
+            color: white;
+
+            h2{
+              font-size: 45px;
+              font-weight: 600;
+            }
+            p{
+              font-size: 25px;
+              font-weight: 600;
+            }
+            ul{
+              font-size: 23px;
+              padding-top: 5vh;
+            }
+          }
+
+
+
+          @include smallDesktop{
+            .shoppingImg{
+              padding: 0 9vw;
+            }
+            
+            .shoppingText{ 
+              h2{
+                font-size: 36px;;
+              }
+              p{
+                font-size: 19px;
+              }
+              ul{
+                font-size: 17px;
+              }
+            }
+          }
+
+          @include tablet{
+            flex-direction: column;
+
+            .shoppingImg{
+              width: 90%;
+              padding: 15vw;
+            }
+            
+            .shoppingText{ 
+              width: 100vw;
+              padding: 7vw;
+
+              h2{
+                font-size: 39px;;
+              }
+              p{
+                font-size: 20px;
+              }
+              ul{
+                font-size: 18px;
+              }
+            }
+     
+          }
+
+          @include largePhone{ 
+            .shoppingText{
+              padding: 5vw;
+
+              h2{
+                font-size: 30px;
+              }
+              p{
+                font-size: 17px;
+              }
+              ul{
+                font-size: 15px;
+              }
+            }           
+          }
+
+          @include smallPhone{
+            .shoppingText{
+              h2{
+                font-size: 27px;
+              }
+              p{
+                font-size: 15px;
+              }
+              ul{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+
+
+
+      .blogSection{
+        width: 100%;
+
+        .blogSectionWrapper{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          
+          .blogImg{
+            width: 50vw;
+            background: url("../images/blogback.jfif") no-repeat right;
+            background-size: cover;
+              
+            .blogImgContainer{
+              padding: 7vw;
+
+              img{
+                width: 100%;
+              }
+            } 
+          }
+
+
+          .blogText{
+            width: 50vw;           
+            padding: 5vw;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            color: rgb(75, 66, 109);
+
+            h5{
+              font-size: 66px;
+              padding: 2vw 0;
+            }
+            p{
+              font-size: 26px;
+              padding: 2vw 0;
+            }
+          }
+
+
+
+          @include mediumDesktop{
+
+            .blogText{
+              h5{
+                font-size: 56px;
+              }
+              p{
+                font-size: 22px;
+              }
+            }
+          }
+
+          @include smallDesktop{
+
+            .blogText{
+              h5{
+                font-size: 46px;
+              }
+              p{
+                font-size: 17px;
+              }
+            }
+          }
+
+          @include tablet{
+            flex-direction: column-reverse;
+
+            .blogImg{
+              width: 100vw;
+            }
+  
+            .blogText{
+              width: 100vw;  
+  
+              h5{
+                font-size: 56px;
+              }
+              p{
+                font-size: 22px;
+              }
+            }
+          }
+        
+          @include largePhone{
+            .blogText{
+              width: 100vw;  
+  
+              h5{
+                font-size: 36px;
+              }
+              p{
+                font-size: 16px;
+              }
+            }
+          }
+
+          @include smallPhone{
+            .blogImg{                
+              .blogImgContainer{
+                padding: 3vw;
+              } 
+            }
+
+            .blogText{
+              width: 100vw;  
+              h5{
+                font-size: 30px;
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }   
+    }
+    
+
+
+
+    footer{
+      width: 100%;
+      height: 50px;
+      background-color: rgb(31, 31, 31);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+
+      h4{
+        font-size: 15px;
+        color: white;
+      }
+
+      @include largePhone {
+        height: 35px;
+
+        h4{
+          font-size: 12px;
+        }
+      }
+    }  
+} 
+
+
+
